@@ -1,0 +1,23 @@
+version: '3'
+services:
+    server:
+        build:
+            dockerfile: Dockerfile
+            context: ./u-api-back
+        volumes:
+            - ./u-api-back/node_modules
+            - ./u-api-back:/app
+    nginx:
+        restart: always
+        build:
+          dockerfile: Dockerfile
+          context: ./nginx
+        ports:
+          - '5000:80'
+    client:
+        build:
+            dockerfile: Dockerfile
+            context: ./u-api-front
+        volumes:
+            - ./u-api-front/node_modules
+            - ./u-api-front:/app

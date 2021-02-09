@@ -1,0 +1,17 @@
+version: "2"
+services:
+  nodejs-server:
+    image: shyaboi/u-api-back
+    cpu_shares: 50
+    ports:
+      - 80:4444
+    volumes:
+      - /app/u-api-back
+  web:
+    image: shyaboi/u-api-home
+    cpu_shares: 50
+    command: npm start
+    ports:
+      - 80:3000
+    volumes:
+      - /app/uhome

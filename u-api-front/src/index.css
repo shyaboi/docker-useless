@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #334d50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #cbcaa5, #334d50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #cbcaa5, #334d50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#jumbo{
+  text-align: center
+}
+
+.doc-headers{
+  text-align: center;
+}
+#submitRow{
+  text-align: center;
+}
+
+#editor-head{
+  text-align: center;
+}
+
+#pics{
+  display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#drop-row > * {
+  display: block;
+  margin: 2em 1em;
+}

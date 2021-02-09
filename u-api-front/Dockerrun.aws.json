@@ -1,0 +1,24 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "volumes": [ {
+    "Name": "shyaboi/u-api-home",
+    "Update": "true"
+  },
+   {
+    "Name": "shyaboi/u-api-back",
+    "Update": "true"
+  }
+  ],
+
+  "Ports": [
+    {
+      "ContainerPort": 3000,
+      "HostPort": 80
+    },
+    {
+      "ContainerPort": 4444,
+      "HostPort": 8000
+    }
+  ],
+  "Logging": "/var/log/nginx"
+}
