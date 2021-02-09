@@ -42,7 +42,7 @@ const All = (props) => {
             {routes.map((routes) => (
               <Card>
                 <CardBody>
-                  <NavLink href={"/u-c-r" + routes.route}>
+                  <NavLink href={"http://144.126.222.91:4444/u-c-r" + routes.route}>
                     {" "}
                     <CardTitle tag="h4">
                       UselessAPI.com/u-c-r{routes.route}
@@ -55,7 +55,7 @@ const All = (props) => {
                     The Raw Code:
                   </CardSubtitle>
                   <CardText>{routes.funktion}</CardText>
-                  <a href={"/u-c-r" + routes.route}>
+                  <a href={"http://144.126.222.91:4444/u-c-r" + routes.route}>
                     {" "}
                     <Button color="info">Take Me to {routes.route}</Button>
                   </a>
