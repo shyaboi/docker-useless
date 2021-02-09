@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # build the app containers
-docker build -t shyaboi/u-api-back .
+docker build -t shyaboi/uback .
 
-docker build -t shyaboi/u-api-home .
+docker build -t shyaboi/ufront .
 
 # create the network
 docker network create useless-net
