@@ -1,6 +1,7 @@
 //importing route kreator class for creating the routes for users(WIP)
 const Kreator = require("./route-kreator/kreator");
 //importing env vars
+require("dotenv").config();
 //importing express
 const express = require("express");
 const app = express();
