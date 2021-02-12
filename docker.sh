@@ -13,10 +13,12 @@ docker run -d --net useless-net -p 27017:27017 --name mong \
       -e MONGO_INITDB_ROOT_PASSWORD=useless \
       mongo
 # start the node app containers
-docker run -d --net useless-net -p 4444:4444 --name uback shyaboi/uback \
+docker run -d --net useless-net -p 4444:4444 --name uback \
       -e DB_U=uselss \
       -e DB_P=uP@55 \
       -e DB_H=144.126.222.91 \
       -e DB_C=27017/UUCAPI?retryWrites=true&w=majority
+      shyaboi/uback 
+      
 
 docker run -d --net useless-net -p 3000:3000 --name uhome shyaboi/ufront
