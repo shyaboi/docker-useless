@@ -1,6 +1,6 @@
-require('dotenv').config({path:'../../.env'})
+// require('dotenv').config({path:'../../.env'})
 const mongoose = require('mongoose');
-const host = "mongodb://"+process.env.DB_U+":"+process.env.DB_P+"@"+process.env.DB_H;
+const host = "mongodb://"+process.env.DB_U+":"+process.env.DB_P+"@http://"+process.env.DB_H+":"+process.env.DB_C;
 mongoose.connect(host, {useNewUrlParser: true, useUnifiedTopology: true});
 
 const db = mongoose.connection;
