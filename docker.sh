@@ -16,6 +16,7 @@ docker run -d --net useless-net -p 27017:27017 --name mong \
 docker run -d --net useless-net -p 4444:4444 --name uback shyaboi/uback \
       -e DB_U=uselss \
       -e DB_P=uP@55 \
-      -e DB_H=http://http://144.126.222.91:27017/UUCAPI?retryWrites=true&w=majority
+      -e DB_H=144.126.222.91 \
+      -e DB_C=27017/UUCAPI?retryWrites=true&w=majority
 
 docker run -d --net useless-net -p 3000:3000 --name uhome shyaboi/ufront
