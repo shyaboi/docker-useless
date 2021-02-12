@@ -17,7 +17,7 @@ const All = (props) => {
   const [routes, setRoutes] = useState([]);
 
   const getAll = async () => {
-    let response = await fetch(`/u-c/all-JSON`);
+    let response = await fetch(`http://144.126.222.91/u-c/all-JSON`);
     let data = await response.json();
     derta = await data;
     console.log(derta[0].route);
