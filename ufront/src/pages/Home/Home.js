@@ -28,9 +28,15 @@ const Home = (props) => {
   const toggleLow = () => setDropdownOpenLow((prevState) => !prevState);
 
   const getAll = async ()=> {
-    let response = await fetch(`http://144.126.222.91:4444/u-c/all-routes`);
-    let data = await response.json()
-    derta = await data
+    try {
+      
+      let response = await fetch(`http://localhost:4444/u-c/all-routes`);
+      let data = await response.json()
+      derta = await data
+    } catch (error) {
+        console.log('That did not go well.')
+        throw error
+    }
     setRoutes(derta)
   }
   useEffect(() => {
@@ -56,7 +62,7 @@ const Home = (props) => {
                   <DropdownItem header>User Created Routes</DropdownItem>
                   <Suspense fallback={<div>Loading...</div>}>
                   {routes.map((routes) => (
-                    <a href={"http://144.126.222.91:4444/u-c-r" + routes}>
+                    <a href={"http://localhost:4444/u-c-r" + routes}>
                       <DropdownItem color="info">{routes}</DropdownItem>
                     </a>
                   ))}
