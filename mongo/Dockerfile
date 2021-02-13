@@ -1,8 +1,5 @@
 FROM mongo:latest
 
-# custom label for the docker image
-LABEL version="0.1" maintainer="ObjectRocket"
-
 # use 'RUN' to execute commands in the container's bash terminal
 RUN apt-get update -y
 RUN apt-get remove mongodb-org -y

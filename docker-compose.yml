@@ -1,27 +1,19 @@
 version: "3"
 services:
-    mongo-database:
-        image: shyaboi/mong
-        container_name: mong
-    volumes:
-     - $PWD/mongo-data:/data/db
-    ports:
-     - "27017:27017"
-    environment:
-     - MONGO_INITDB_ROOT_USERNAME=useless
-      - MONGO_INITDB_ROOT_PASSWORD=uP@55
     server:
         container_name: uback
         image: shyaboi/uback
         restart: always
-        build: ./u-api-back
+        build: ./uback
+        environment:
+         - MONG_DB=mongodb+srv://mongu:MSeHWPDYto2jcwob@cluster0.yrmmu.mongodb.net/test
         ports:
-            - "4444:4444"
+         - "4444:4444"
     client:
         container_name: ufront
         image: shyaboi/ufront
         restart: always
-        build: ./u-api-front
+        build: ./ufront
         ports:
             - "3000:3000"
         links:
