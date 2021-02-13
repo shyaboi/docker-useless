@@ -102,7 +102,7 @@ useEffect(() => {
     setFunk(finalFunction);
     setIsLoading(true);
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://localhost:4444/u-c/new", true);
+    xhr.open("POST", "http://144.126.222.91:4444/u-c/new", true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send(
       JSON.stringify({
@@ -113,8 +113,8 @@ useEffect(() => {
     // do something asynchronous that takes time, this function is just an example
     // reset form and loading state
     setIsLoading(false);
-    alert(`Redirecting you to http://localhost:4444/u-c-r/${route}`);
-    window.location.replace(`http://localhost:4444/u-c-r/${route}`);
+    alert(`Redirecting you to http://144.126.222.91:4444/u-c-r/${route}`);
+    window.location.replace(`http://144.126.222.91:4444/u-c-r/${route}`);
     // alert(`your new route can be see at https://uselessapi/u-c-r${route}`);
   };
 
