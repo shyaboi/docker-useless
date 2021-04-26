@@ -13,7 +13,7 @@ So in your code you create you can utilize the response, and request parameters 
 
 A typical UseLess API function will be similar to the example below.
 
-`response.send("hello world")`
+`response.json({geeting:"hello world"})`
 
 This will sent the string 'hello world' to the endpoint chosen by the user.
 # Documentation 
@@ -35,4 +35,4 @@ I am currently working on containerizing the routing process so that users will 
 
 Working on making the editor more responsive and with more options.
 
-Implimenting sercuirty fixes as they come up. In it's current state it is a very vunarable application, but the containerization will help.
+Implimenting sercuirty fixes as they come up. In it's current state it is a very vunarable application, but the current level of containerization helps, but we want to seperate routes further by making each route fully in its own docker container.
