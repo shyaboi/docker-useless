@@ -107,5 +107,5 @@ app.get('*', function(req, res) {
   res.send('<h1>Error 404</h1><h2>Not a route yet, but you can make one <a href="http://uselessapi.com/editor/">here</a>.</h2>')
 });
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`UseLess api listening at http://localhost:${port}`);
 });
