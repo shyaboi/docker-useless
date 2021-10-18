@@ -1,5 +1,5 @@
 # [Docker UseLess API](http://144.126.222.91:3000/ "UseLess API")
-[original UseLessAPI.com](https://uselessapi.com "UseLess API")
+
 
 UseLess API is a serverless lambda type endpoint, with a code editor to create your route and customize the code at your endpoint.
 
@@ -17,7 +17,7 @@ A typical UseLess API function will be similar to the example below.
 
 This will sent the string 'hello world' to the endpoint chosen by the user.
 # Documentation 
-You can find more documentaion on usesage of UseLess API in the [UseLessAPI.com/docs](https://uselessapi.com/docs "UseLess API docs")
+You can find more documentaion on usesage of UseLess API in the [http://144.126.222.91:3000/docs](http://144.126.222.91:3000/docs "UseLess API docs")
 
 # Technology Used
 
